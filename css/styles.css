@@ -1,0 +1,47 @@
+/*
+* Modified From: https://codepen.io/secondfret/pen/tgBCI
+*/
+
+* {margin: 0; padding: 0;}
+ 
+.container {
+  margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+ 
+.article_list {
+  list-style-type: none;
+  width: 50%;
+}
+ 
+.article_title {
+  font: bold 16px/1.5 Verdana, Geneva, sans-serif;
+}
+
+.article_publisher {
+    font: 15px/1.5 Verdana, Geneva, sans-serif;
+}
+ 
+.article_image {
+  float: left;
+  margin: 0 15px 0 0;
+  max-width: 150px;
+}
+ 
+.article_description {
+  font: 200 12px/1.5 "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+ 
+.article_entry {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+.article_entry:hover {
+  background: #eee;
+  cursor: pointer;
+}
