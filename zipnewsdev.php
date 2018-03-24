@@ -14,7 +14,7 @@ class News
 
     public $default_sources = array("ign", "hacker-news", "techradar", "wired", "the-next-web", "techcrunch");
 
-    public function __construct($psize=10, $top_or_every=true, $d_source=[])
+    public function __construct($d_source=[], $psize=10, $top_or_every=true)
     {
         $this->page_size .= $psize;
 
