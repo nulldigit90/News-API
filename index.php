@@ -13,7 +13,7 @@
 		<ul class="article_list">
 			<?php
 
-			$newsObj = new NewsApiClient('89bc62b353d64eaaafff3bb2a825e60d');
+			$newsObj = new NewsApiClient('DaminIt_Ineed_EnvVars_');
 			$n = $newsObj->get_sources('');
 			print_r($n);
 			
