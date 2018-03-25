@@ -3,6 +3,7 @@
     * Doc Strings are pulled from the python lib found here:
     * -> https://github.com/mattlisiv/newsapi-python/blob/master/newsapi/newsapi_client.py
     *
+    * File: news-api.php
     * Author: K.B. Carte
     * Author URL: https://kbcarte.com
     * Date: March 2018
@@ -16,7 +17,7 @@
 
         public function __construct($api_key, $api_url='https://newsapi.org/v2/'){
             /* 
-            * api key should not be in these files, either have a seporate file
+            * api key should not be in these files, either have a separate file
             * containing it, or do like I did and set it as an environment var
             */
             $this->api_key = 'apiKey=' . $api_key;
