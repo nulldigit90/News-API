@@ -18,8 +18,8 @@ I really recommend placing your api key in a different file, or the recommended 
 $key = getenv()["NEWS_API_KEY"];
 $newsObj = new NewsApiClient($key);
 $args = array('language'=>'en',
-	      'pageSize'=>'30',
-              'sources'=>array("ign", "hacker-news", "techradar",
+	        'pageSize'=>'30',
+            'sources'=>array("ign", "hacker-news", "techradar",
                                "wired", "the-next-web",  "techcrunch"));
 
 // returns a JSON file of articles
