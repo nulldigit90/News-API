@@ -20,7 +20,7 @@ $newsObj = new NewsApiClient($key);
 $args = array('language'=>'en',
 	        'pageSize'=>'30',
             'sources'=>array("ign", "hacker-news", "techradar",
-                               "wired", "the-next-web",  "techcrunch"));
+                            "wired", "the-next-web",  "techcrunch"));
 
 // returns a JSON file of articles
 $obj = $newsObj->get_top_headlines($args);
