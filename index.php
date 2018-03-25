@@ -23,7 +23,7 @@
 			$obj = $newsObj->get_top_headlines($args);
 			$article_list = array();
 
-			// if any of the data has null or no values for the things we want to post
+			// if any of the data has null or no values for the things we want to post,
 			//   skip them. Not every article will have everything we need
 			for ($i=0; $i < count($obj["articles"]); $i++) {
 				if ( !is_null($obj["articles"][$i]['url']) and 
