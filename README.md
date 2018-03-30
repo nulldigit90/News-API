@@ -16,7 +16,7 @@ I really recommend placing your api key in a different file, or the recommended 
 
 // Use getenv() instead of $_ENV, the later needs to be set in
 // php.ini to work and is recommended not to be used in production
-$key = getenv()["NEWS_API_KEY"];
+$key = getenv("NEWS_API_KEY");
 $newsObj = new NewsApiClient($key);
 $args = array('language'=>'en',
 	        'pageSize'=>'30',
@@ -36,7 +36,6 @@ Further example found in `index.php`
 - OR on their website https://newsapi.org/docs
 ---
 ## To-Do
-- Images from IGN aren't working atm
 - Add article duplicate check with in the library
 - Add support to filter articles on content (or lack there of)
 - Create WordPress Plugin

@@ -14,7 +14,7 @@
 			<?php
 			// Use getenv() instead of $_ENV, the later needs to be set in
 			// php.ini to work and is recommended not to be used in production
-			$key = getenv()["NEWS_API_KEY"];
+			$key = getenv("NEWSAPI");
 			$newsObj = new NewsApiClient($key);
 			$args = array('language'=>'en',
 						'pageSize'=>'30',
